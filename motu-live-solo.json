@@ -1,0 +1,94 @@
+{
+  "_note": "Split on 2026-11-21 from baroque-solo-1/session-live.json. The grids without a camera play it with the camera and video closed; a solo seats only audio-room and audio-1.",
+  "audioBufferSize": 2048,
+  "audioSources": [
+    {
+      "channels": [
+        3
+      ],
+      "device": "MOTU: Audio Out",
+      "id": "audio-room",
+      "inputGainDb": 0.0,
+      "reduce": "pick"
+    },
+    {
+      "channels": [
+        0
+      ],
+      "device": "MOTU: Audio Out",
+      "id": "audio-1",
+      "inputGainDb": 0.0,
+      "reduce": "pick"
+    }
+  ],
+  "autoSnapshotsEnabled": true,
+  "display": {
+    "brightness": "0.0",
+    "contrast": "1.03",
+    "cueAlpha": "0.10",
+    "exposure": "1.0",
+    "gamma": "2.2",
+    "hueShift": "0.0",
+    "saturation": "1.0",
+    "sideLevel": "0.7",
+    "tonemap": "Reinhard",
+    "whitePoint": "11.2"
+  },
+  "ffmpegBinaryPath": "/opt/homebrew/bin/ffmpeg",
+  "kind": "live",
+  "modPresets": {
+    "AudioDataSource": {
+      "_default": {
+        "MaxRms": 0.318935,
+        "MaxSpectralCentroid": 3749.48,
+        "MaxSpectralCrest": 0.914281,
+        "MaxSpectralFlatness": 0.973077,
+        "MaxZeroCrossingRate": 196.0,
+        "MinPitch": 63.544,
+        "MinRms": 0.00301653,
+        "MinSpectralCentroid": 1006.42,
+        "MinSpectralCrest": 0.202686,
+        "MinSpectralFlatness": 0.74864,
+        "MinZeroCrossingRate": 20.0,
+        "NoiseFloorRms": 0.00151185,
+        "OnsetEnergyScale": 0.0025,
+        "OnsetSpectralScale": 0.0083,
+        "OnsetThreshold": 30.0,
+        "PitchOctaves": 1.0
+      },
+      "bySource": {
+        "audio-1": {
+          "MaxRms": 0.33992726,
+          "MaxSpectralCentroid": 3766.4595,
+          "MaxSpectralCrest": 0.97727287,
+          "MaxSpectralFlatness": 0.9948008,
+          "MaxZeroCrossingRate": 173.0,
+          "MinRms": 0.0008411673,
+          "MinSpectralCentroid": 1369.6277,
+          "MinSpectralCrest": 0.36728355,
+          "MinSpectralFlatness": 0.7994685,
+          "MinZeroCrossingRate": 34.0,
+          "NoiseFloorRms": 0.00037467355
+        },
+        "audio-room": {
+          "MaxRms": 0.008055826,
+          "MaxSpectralCentroid": 3046.9302,
+          "MaxSpectralCrest": 0.6614762,
+          "MaxSpectralFlatness": 0.99918157,
+          "MaxZeroCrossingRate": 156.94998,
+          "MinRms": 0.0006371671,
+          "MinSpectralCentroid": 1264.9963,
+          "MinSpectralCrest": 0.1503127,
+          "MinSpectralFlatness": 0.9943357,
+          "MinZeroCrossingRate": 37.35,
+          "NoiseFloorRms": 0.0005706361,
+          "OnsetThreshold": 3.7
+        }
+      }
+    }
+  },
+  "rootSourceMaterialPath": "~/Documents/music-source-material",
+  "startHibernated": true,
+  "startRecordingOnFirstWake": true,
+  "syphonMode": "off"
+}

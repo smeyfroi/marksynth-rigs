@@ -1,0 +1,106 @@
+{
+  "_note": "Split on 2026-11-21 from baroque-duet-dance-1/session-live-macbook.json, baroque-duo-1/session-live-macbook.json, baroque-solo-1/session-live-macbook.json, common-air-duet-1/session-live-macbook.json, common-air-duet-dance-1/session-live-macbook.json, demo-duo/session-live-macbook.json, duet-1/session-live-macbook.json, impressionist-duo-1/session-live-macbook.json, impressionist-solo-1/session-live-macbook.json. The grids without a camera play it with the camera and video closed; a solo seats only audio-room and audio-1.",
+  "audioBufferSize": 2048,
+  "audioSources": [
+    {
+      "channels": [
+        0
+      ],
+      "device": "Apple Inc.: MacBook Pro Microphone",
+      "id": "audio-room",
+      "inputGainDb": 0.0,
+      "reduce": "pick"
+    },
+    {
+      "channels": [
+        0
+      ],
+      "device": "Apple Inc.: MacBook Pro Microphone",
+      "id": "audio-1",
+      "inputGainDb": 0.0,
+      "reduce": "pick"
+    },
+    {
+      "id": "audio-2",
+      "loopOf": "audio-1",
+      "monitorLevel": 0.8
+    }
+  ],
+  "autoSnapshotsEnabled": true,
+  "cameraDeviceName": "Steve’s iPhone Camera",
+  "display": {
+    "brightness": "0.0",
+    "contrast": "1.03",
+    "cueAlpha": "0.10",
+    "exposure": "1.0",
+    "gamma": "2.2",
+    "hueShift": "0.0",
+    "saturation": "1.0",
+    "sideLevel": "0.7",
+    "tonemap": "Reinhard",
+    "whitePoint": "11.2"
+  },
+  "ffmpegBinaryPath": "/opt/homebrew/bin/ffmpeg",
+  "kind": "live",
+  "modPresets": {
+    "AudioDataSource": {
+      "_default": {
+        "MaxRms": 0.318935,
+        "MaxSpectralCentroid": 3749.48,
+        "MaxSpectralCrest": 0.914281,
+        "MaxSpectralFlatness": 0.973077,
+        "MaxZeroCrossingRate": 196.0,
+        "MinPitch": 63.544,
+        "MinRms": 0.00301653,
+        "MinSpectralCentroid": 1006.42,
+        "MinSpectralCrest": 0.202686,
+        "MinSpectralFlatness": 0.74864,
+        "MinZeroCrossingRate": 20.0,
+        "NoiseFloorRms": 0.00151185,
+        "OnsetEnergyScale": 0.0025,
+        "OnsetSpectralScale": 0.0083,
+        "OnsetThreshold": 30.0,
+        "PitchOctaves": 1.0
+      },
+      "bySource": {
+        "audio-1": {
+          "MaxRms": 0.03983164,
+          "MaxSpectralCentroid": 3050.661,
+          "MaxSpectralCrest": 0.6097376,
+          "MaxSpectralFlatness": 0.9907151,
+          "MaxZeroCrossingRate": 184.0,
+          "MinRms": 0.0018567661,
+          "MinSpectralCentroid": 1365.3442,
+          "MinSpectralCrest": 0.16601476,
+          "MinSpectralFlatness": 0.94258815,
+          "MinZeroCrossingRate": 31.9,
+          "NoiseFloorRms": 0.0011174503
+        }
+      }
+    },
+    "VectorMagnitude": {
+      "bySource": {
+        "camera": {
+          "Max": "0.0008",
+          "Min": "0"
+        }
+      }
+    },
+    "VideoFlowSource": {
+      "bySource": {
+        "camera": {
+          "force": 3.0,
+          "threshold": 0.4
+        }
+      }
+    }
+  },
+  "rootSourceMaterialPath": "~/Documents/music-source-material",
+  "startHibernated": true,
+  "startRecordingOnFirstWake": true,
+  "syphonMode": "off",
+  "videoSize": [
+    1920,
+    1080
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "_note": "Split on 2026-11-21 from common-air-duet-1/session-live-loop.json. The grids without a camera play it with the camera and video closed; a solo seats only audio-room and audio-1.",
+  "audioBufferSize": 2048,
+  "audioSources": [
+    {
+      "channels": [
+        3
+      ],
+      "device": "MOTU: Audio Out",
+      "id": "audio-room",
+      "inputGainDb": 0.0,
+      "reduce": "pick"
+    },
+    {
+      "channels": [
+        0
+      ],
+      "device": "MOTU: Audio Out",
+      "id": "audio-1",
+      "inputGainDb": 0.0,
+      "reduce": "pick"
+    },
+    {
+      "id": "audio-2",
+      "loopOf": "audio-1",
+      "monitorLevel": 0.8
+    }
+  ],
+  "autoSnapshotsEnabled": true,
+  "display": {
+    "brightness": "0.0",
+    "contrast": "1.03",
+    "cueAlpha": "0.10",
+    "exposure": "1.0",
+    "gamma": "2.2",
+    "hueShift": "0.0",
+    "saturation": "1.0",
+    "sideLevel": "0.7",
+    "tonemap": "Reinhard",
+    "whitePoint": "11.2"
+  },
+  "ffmpegBinaryPath": "/opt/homebrew/bin/ffmpeg",
+  "kind": "live",
+  "modPresets": {
+    "AudioDataSource": {
+      "_default": {
+        "MaxRms": 0.318935,
+        "MaxSpectralCentroid": 3749.48,
+        "MaxSpectralCrest": 0.914281,
+        "MaxSpectralFlatness": 0.973077,
+        "MaxZeroCrossingRate": 196.0,
+        "MinPitch": 63.544,
+        "MinRms": 0.00301653,
+        "MinSpectralCentroid": 1006.42,
+        "MinSpectralCrest": 0.202686,
+        "MinSpectralFlatness": 0.74864,
+        "MinZeroCrossingRate": 20.0,
+        "NoiseFloorRms": 0.00151185,
+        "OnsetEnergyScale": 0.0025,
+        "OnsetSpectralScale": 0.0083,
+        "OnsetThreshold": 30.0,
+        "PitchOctaves": 1.0
+      },
+      "bySource": {
+        "audio-1": {
+          "MaxRms": 0.122264214,
+          "MaxSpectralCentroid": 4101.596,
+          "MaxSpectralCrest": 0.5947792,
+          "MaxSpectralFlatness": 0.9978749,
+          "MaxZeroCrossingRate": 331.3,
+          "MinRms": 0.00044216227,
+          "MinSpectralCentroid": 2019.6034,
+          "MinSpectralCrest": 0.1358368,
+          "MinSpectralFlatness": 0.8505139,
+          "MinZeroCrossingRate": 67.85,
+          "NoiseFloorRms": 0.00023371524,
+          "OnsetThreshold": 50.0
+        },
+        "audio-room": {
+          "MaxRms": 0.13075519,
+          "MaxSpectralCentroid": 3579.9465,
+          "MaxSpectralCrest": 0.7214086,
+          "MaxSpectralFlatness": 0.9191241,
+          "MaxZeroCrossingRate": 198.5,
+          "MinRms": 0.017510984,
+          "MinSpectralCentroid": 1621.325,
+          "MinSpectralCrest": 0.21910945,
+          "MinSpectralFlatness": 0.8144878,
+          "MinZeroCrossingRate": 54.5,
+          "NoiseFloorRms": 0.01534378,
+          "OnsetThreshold": 3.7
+        }
+      }
+    }
+  },
+  "rootSourceMaterialPath": "~/Documents/music-source-material",
+  "startHibernated": true,
+  "startRecordingOnFirstWake": true,
+  "syphonMode": "off"
+}
